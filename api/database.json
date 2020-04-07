@@ -1,0 +1,188 @@
+{
+    "computers": [
+        {
+            "id": 1,
+            "model": "Macbook Pro",
+            "year": 2017
+        },
+        {
+            "id": 2,
+            "model": "Dell XPS 13",
+            "year": 2015
+        },
+        {
+            "id": 3,
+            "model": "Acer Aspire 5",
+            "year": 2014
+        },
+        {
+            "id": 4,
+            "model": "Asus Chromebook",
+            "year": 2016
+        },
+        {
+            "id": 5,
+            "model": "HP Envy 13t",
+            "year": 2014
+        },
+        {
+            "id": 6,
+            "model": "Acer Swift 7",
+            "year": 2019
+        },
+        {
+            "id": 7,
+            "model": " Dell Savage Hydro",
+            "year": 2016
+        },
+        {
+            "id": 8,
+            "model": "Lenovo Yoga C940",
+            "year": 2015
+        },
+        {
+            "id": 9,
+            "model": "Samsung Chromebook 3",
+            "year": 2017
+        },
+        {
+            "id": 10,
+            "model": "Microsoft Surface Laptop 3",
+            "year": 2018
+        }
+    ],
+    "employees": [
+        {
+            "id": 1,
+            "firstName": "Rainu",
+            "lastName": "Ittycheriah",
+            "computerId": 1
+        },
+        {
+            "id": 2,
+            "firstName": "Cayson",
+            "lastName": "Charlton",
+            "computerId": 2
+        },
+        {
+            "id": 3,
+            "firstName": "Stacy",
+            "lastName": "Frost",
+            "computerId": 3
+        },
+        {
+            "id": 4,
+            "firstName": "Billy",
+            "lastName": "Bob",
+            "computerId": 4
+        },
+        {
+            "id": 5,
+            "firstName": "Hugh",
+            "lastName": "Heffneer",
+            "computerId": 5
+        },
+        {
+            "id": 6,
+            "firstName": "John",
+            "lastName": "Jacobs",
+            "computerId": 6
+        },
+        {
+            "id": 7,
+            "firstName": "Harry",
+            "lastName": "Glob",
+            "computerId": 7
+        },
+        {
+            "id": 8,
+            "firstName": "Ben",
+            "lastName": "Stien",
+            "computerId": 2
+        },
+        {
+            "id": 10,
+            "firstName": "Riley",
+            "lastName": "Fart",
+            "computerId": 1
+        },
+        {
+            "id": 11,
+            "firstName": "Perry",
+            "lastName": "Pickel",
+            "computerId": 4
+        }
+    ],
+    "employeesComputers": [
+        {
+            "id": 1,
+            "employeeId": 1,
+            "computerId": 4
+        },
+        {
+            "id": 2,
+            "employeeId": 7,
+            "computerId": 1
+        },
+        {
+            "id": 3,
+            "employeeId": 2,
+            "computerId": 8
+        },
+        {
+            "id": 4,
+            "employeeId": 4,
+            "computerId": 6
+        },
+        {
+            "id": 6,
+            "employeeId": 6,
+            "computerId": 7
+        },
+        {
+            "id": 7,
+            "employeeId": 11,
+            "computerId": 1
+        },
+        {
+            "id": 8,
+            "employeeId": 2,
+            "computerId": 9
+        },
+        {
+            "id": 9,
+            "employeeId": 10,
+            "computerId": 10
+        },
+        {
+            "id": 10,
+            "employeeId": 5,
+            "computerId": 7
+        },
+        {
+            "id": 11,
+            "employeeId": 5,
+            "computerId": 4
+        },
+        {
+            "id": 12,
+            "employeeId": 8,
+            "computerId": 3
+        },
+        {
+            "id": 13,
+            "employeeId": 9,
+            "computerId": 2
+        },
+        {
+            "id": 14,
+            "employeeId": 5,
+            "computerId": 5
+        },
+        {
+            "id": 15,
+            "employeeId": 3,
+            "computerId": 4
+        }
+    ]
+}
