@@ -2,13 +2,13 @@ const employee = (employees, computers) => {
     return `
         <section class="employees">
             <header>
-                <h2>${employees.firstName}, ${employees.lastName}</h2>
+                <h2>${employees.firstName} ${employees.lastName}</h2>
             </header>
             <div>
                 <ol>
                     ${
                     computers.map(computer => `<li>${computer.model}</li>
-                    <p>Date Manufactured: ${computer.year}</p>`).join("")
+                    <ul>Date Manufactured: ${computer.year}</ul>`).join("")
                     }
                 </ol>
             </div>

@@ -8,8 +8,11 @@ const contentTarget = document.querySelector(".targetDOM")
 
 export const employeeList = () => {
     const computers = useComputers()
+    console.log(computers)
     const employees = useEmployees()
+    console.log(employees)
     const employeeComputers = useEmployeesComputers()
+    console.log(employeeComputers)
 
     const render = () => {
         contentTarget.innerHTML = employees.map(person => {
