@@ -1,18 +1,16 @@
-const employee = (employees, computers) => {
+const employee = (person, computer, department) => {
     return `
         <section class="employees">
-            <header>
-                <h2>${employees.firstName} ${employees.lastName}</h2>
+            <header class="employee__name">
+                <h2>${person.firstName} ${person.lastName}</h2>
             </header>
-            <div>
-                <ol>
-                    ${
-                    computers.map(computer => `<li>${computer.model}</li>
-                    <ul>Date Manufactured: ${computer.year}</ul>`).join("")
-                    }
-                </ol>
-            </div>
-        </section>
+            <section class="employee__computer">
+            Uses a ${computer.model}  ${computer.year}
+            </section>
+            <section class="employee__department">
+            Works in the ${department.name}
+            </section>
+            </section>
     `
 }
 

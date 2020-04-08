@@ -1,6 +1,7 @@
 import { useComputers } from "./computerProvider.js"
 import { useEmployees } from "./employeeProvider.js"
-import { useEmployeesComputers } from "./employeesComputersProvider.js"
+import { useEmployeesDepartments } from "./employeesDepartmentsProvider.js"
+import { useDepartments } from "./departmentsProvider.js"
 import employee from "./employee.js"
 
 
@@ -11,21 +12,29 @@ export const employeeList = () => {
     console.log(computers)
     const employees = useEmployees()
     console.log(employees)
-    const employeeComputers = useEmployeesComputers()
-    console.log(employeeComputers)
+    const departments = useDepartments()
+    console.log(departments)
+    const employeesDepartments = useEmployeesDepartments()
+    console.log(employeesDepartments)
 
     const render = () => {
         contentTarget.innerHTML = employees.map(person => {
-            // Find related computers ids
-            let relatedComputers = employeeComputers.filter(ec => ec.employeeId === person.id)
-
+            // Find related computers ids            
             // Convert the array from relationship objects to computers objects
-            relatedComputers = relatedComputers.map(rc => {
-                return computers.find(computer => computer.id === rc.computerId)
-            })
+            const relatedComputers = computers.find(computer => computer.id === person.computerId)
+            
+            const relatedDepartments = departments.find(department => department.id === person.departmentId)
 
+
+            const employeesDepartment = employeesDepartments.filter(ed => ed.employeeId === person.id)
+
+            
+            const foundDepartmentArray = employeesDepartment.map(rd => {
+               const foundDepartments = departments.find(department => department.id === rd.departmentId)
+                return foundDepartments
+            })
             // Get HTML representation of product
-            const html = employee(person, relatedComputers)
+            const html = employee(person, relatedComputers, relatedDepartments, foundDepartmentArray)
 
             return html
         }).join("")

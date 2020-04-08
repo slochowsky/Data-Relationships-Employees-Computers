@@ -56,133 +56,112 @@
             "id": 1,
             "firstName": "Rainu",
             "lastName": "Ittycheriah",
-            "computerId": 1
+            "computerId": 1,
+            "departmentId": 1
         },
         {
             "id": 2,
             "firstName": "Cayson",
             "lastName": "Charlton",
-            "computerId": 2
+            "computerId": 2,
+            "departmentId": 2
         },
         {
             "id": 3,
             "firstName": "Stacy",
             "lastName": "Frost",
-            "computerId": 3
+            "computerId": 3,
+            "departmentId": 3
         },
         {
             "id": 4,
             "firstName": "Billy",
             "lastName": "Bob",
-            "computerId": 4
+            "computerId": 4,
+            "departmentId": 4
         },
         {
             "id": 5,
             "firstName": "Hugh",
             "lastName": "Heffneer",
-            "computerId": 5
+            "computerId": 5,
+            "departmentId": 1
         },
         {
             "id": 6,
             "firstName": "John",
             "lastName": "Jacobs",
-            "computerId": 6
+            "computerId": 6,
+            "departmentId": 2
         },
         {
             "id": 7,
             "firstName": "Harry",
             "lastName": "Glob",
-            "computerId": 7
+            "computerId": 7,
+            "departmentId": 4
         },
         {
             "id": 8,
             "firstName": "Ben",
             "lastName": "Stien",
-            "computerId": 2
+            "computerId": 2,
+            "departmentId": 1
         },
         {
             "id": 10,
             "firstName": "Riley",
             "lastName": "Fart",
-            "computerId": 1
+            "computerId": 1,
+            "departmentId": 4
         },
         {
             "id": 11,
             "firstName": "Perry",
             "lastName": "Pickel",
-            "computerId": 4
+            "computerId": 4,
+            "departmentId": 3
         }
     ],
-    "employeesComputers": [
+    "departments": [
         {
             "id": 1,
-            "employeeId": 1,
-            "computerId": 4
+            "name": "Accounting"
         },
         {
             "id": 2,
-            "employeeId": 7,
-            "computerId": 1
+            "name": "Staffing"
         },
         {
             "id": 3,
-            "employeeId": 2,
-            "computerId": 8
+            "name": "Shipping"
         },
         {
             "id": 4,
-            "employeeId": 4,
-            "computerId": 6
-        },
+            "name": "IT"
+        }
+    ],
+    "employeesDepartments": [
         {
-            "id": 6,
-            "employeeId": 6,
-            "computerId": 7
-        },
-        {
-            "id": 7,
-            "employeeId": 11,
-            "computerId": 1
-        },
-        {
-            "id": 8,
-            "employeeId": 2,
-            "computerId": 9
-        },
-        {
-            "id": 9,
-            "employeeId": 10,
-            "computerId": 10
-        },
-        {
-            "id": 10,
-            "employeeId": 5,
-            "computerId": 7
-        },
-        {
-            "id": 11,
-            "employeeId": 5,
-            "computerId": 4
-        },
-        {
-            "id": 12,
-            "employeeId": 8,
-            "computerId": 3
-        },
-        {
-            "id": 13,
-            "employeeId": 9,
-            "computerId": 2
-        },
-        {
-            "id": 14,
-            "employeeId": 5,
-            "computerId": 5
-        },
-        {
-            "id": 15,
+            "id": 1,
             "employeeId": 3,
-            "computerId": 4
+            "departmentId": 4
+        },
+        {
+            "id": 2,
+            "employeeId": 1,
+            "departmentId": 3
+        },
+        {
+            "id": 3,
+            "employeeId": 4,
+            "departmentId": 2
+        },
+        {
+            "id": 4,
+            "employeeId": 2,
+            "departmentId": 1
         }
     ]
+    
 }
