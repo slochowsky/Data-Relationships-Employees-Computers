@@ -1,8 +1,9 @@
 import { useComputers } from "./computerProvider.js"
 import { useEmployees } from "./employeeProvider.js"
-import { useEmployeesDepartments } from "./employeesDepartmentsProvider.js"
+import { useEmployeesLocations } from "./employeesLocationsProvider.js"
 import { useDepartments } from "./departmentsProvider.js"
 import employee from "./employee.js"
+import { useLocations } from "./locationsDataProvider.js"
 
 
 const contentTarget = document.querySelector(".targetDOM")
@@ -14,8 +15,9 @@ export const employeeList = () => {
     console.log(employees)
     const departments = useDepartments()
     console.log(departments)
-    const employeesDepartments = useEmployeesDepartments()
-    console.log(employeesDepartments)
+    const locations = useLocations()
+    const employeesLocations = useEmployeesLocations()
+    console.log(employeesLocations)
 
     const render = () => {
         contentTarget.innerHTML = employees.map(person => {
@@ -25,16 +27,11 @@ export const employeeList = () => {
             
             const relatedDepartments = departments.find(department => department.id === person.departmentId)
 
-
-            const employeesDepartment = employeesDepartments.filter(ed => ed.employeeId === person.id)
+            const relatedLocation = locations.find(location => location.id === person.locationId)
 
             
-            const foundDepartmentArray = employeesDepartment.map(rd => {
-               const foundDepartments = departments.find(department => department.id === rd.departmentId)
-                return foundDepartments
-            })
             // Get HTML representation of product
-            const html = employee(person, relatedComputers, relatedDepartments, foundDepartmentArray)
+            const html = employee(person, relatedComputers, relatedDepartments, relatedLocation)
 
             return html
         }).join("")

@@ -57,70 +57,80 @@
             "firstName": "Rainu",
             "lastName": "Ittycheriah",
             "computerId": 1,
-            "departmentId": 1
+            "departmentId": 1,
+            "locationId": 4
         },
         {
             "id": 2,
             "firstName": "Cayson",
             "lastName": "Charlton",
             "computerId": 2,
-            "departmentId": 2
+            "departmentId": 2,
+            "locationId": 1
         },
         {
             "id": 3,
             "firstName": "Stacy",
             "lastName": "Frost",
             "computerId": 3,
-            "departmentId": 3
+            "departmentId": 3,
+            "locationId": 3
         },
         {
             "id": 4,
             "firstName": "Billy",
             "lastName": "Bob",
             "computerId": 4,
-            "departmentId": 4
+            "departmentId": 4,
+            "locationId": 3
         },
         {
             "id": 5,
             "firstName": "Hugh",
             "lastName": "Heffneer",
             "computerId": 5,
-            "departmentId": 1
+            "departmentId": 1,
+            "locationId": 1
         },
         {
             "id": 6,
             "firstName": "John",
             "lastName": "Jacobs",
             "computerId": 6,
-            "departmentId": 2
+            "departmentId": 2,
+            "locationId": 2
         },
         {
             "id": 7,
             "firstName": "Harry",
             "lastName": "Glob",
             "computerId": 7,
-            "departmentId": 4
+            "departmentId": 4,
+            "locationId": 4
         },
         {
             "id": 8,
             "firstName": "Ben",
             "lastName": "Stien",
             "computerId": 2,
-            "departmentId": 1
+            "departmentId": 1,
+            "locationId": 3
         },
         {
             "id": 10,
             "firstName": "Riley",
             "lastName": "Fart",
             "computerId": 1,
-            "departmentId": 4
+            "departmentId": 4,
+            "locationId": 2
         },
         {
             "id": 11,
             "firstName": "Perry",
             "lastName": "Pickel",
             "computerId": 4,
-            "departmentId": 3
+            "departmentId": 3,
+            "locationId": 1
         }
     ],
     "departments": [
@@ -141,26 +151,44 @@
             "name": "IT"
         }
     ],
-    "employeesDepartments": [
+    "locations": [
+        {
+            "id": 1,
+            "name": "NSS Office"
+        },
+        {
+            "id": 2,
+            "name": "Nashville Office"
+        },
+        {
+            "id": 3,
+            "name": "Memphis Office"
+        },
+        {
+            "id": 4,
+            "name": "New York Office"
+        }
+    ],
+    "employeesLocations": [
         {
             "id": 1,
             "employeeId": 3,
-            "departmentId": 4
+            "locationId": 4
         },
         {
             "id": 2,
             "employeeId": 1,
-            "departmentId": 3
+            "locationId": 3
         },
         {
             "id": 3,
             "employeeId": 4,
-            "departmentId": 2
+            "locationId": 2
         },
         {
             "id": 4,
             "employeeId": 2,
-            "departmentId": 1
+            "locationId": 1
         }
     ]
     
