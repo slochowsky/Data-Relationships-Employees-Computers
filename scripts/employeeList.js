@@ -7,7 +7,7 @@ import { useCustomers } from "./customerProvider.js"
 import employee from "./employee.js"
 
 
-const contentTarget = document.querySelector(".targetDOM")
+const contentTarget = document.querySelector(".employees")
 
 export const employeeList = () => {
     const computers = useComputers()

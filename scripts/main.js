@@ -5,6 +5,7 @@ import { getLocations } from "./locationsDataProvider.js";
 import { getEmployeeCustomers } from "./employeesCustomersProvider.js";
 import { getCustomers } from "./customerProvider.js";
 import employeeList from "./employeeList.js";
+import customerList from "./customerList.js";
 
 
 getComputers()
@@ -14,3 +15,4 @@ getComputers()
     .then(getCustomers)
     .then(getEmployeeCustomers)
     .then(employeeList)
+    .then(customerList)

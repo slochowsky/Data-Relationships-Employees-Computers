@@ -1,0 +1,13 @@
+
+
+.customers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.employees {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
