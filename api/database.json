@@ -91,46 +91,6 @@
             "computerId": 5,
             "departmentId": 1,
             "locationId": 1
-        },
-        {
-            "id": 6,
-            "firstName": "John",
-            "lastName": "Jacobs",
-            "computerId": 6,
-            "departmentId": 2,
-            "locationId": 2
-        },
-        {
-            "id": 7,
-            "firstName": "Harry",
-            "lastName": "Glob",
-            "computerId": 7,
-            "departmentId": 4,
-            "locationId": 4
-        },
-        {
-            "id": 8,
-            "firstName": "Ben",
-            "lastName": "Stien",
-            "computerId": 2,
-            "departmentId": 1,
-            "locationId": 3
-        },
-        {
-            "id": 10,
-            "firstName": "Riley",
-            "lastName": "Fart",
-            "computerId": 1,
-            "departmentId": 4,
-            "locationId": 2
-        },
-        {
-            "id": 11,
-            "firstName": "Perry",
-            "lastName": "Pickel",
-            "computerId": 4,
-            "departmentId": 3,
-            "locationId": 1
         }
     ],
     "departments": [
@@ -169,27 +129,74 @@
             "name": "New York Office"
         }
     ],
-    "employeesLocations": [
+    "customers": [
         {
             "id": 1,
-            "employeeId": 3,
-            "locationId": 4
+            "businessName": "FedEx"
         },
         {
             "id": 2,
-            "employeeId": 1,
-            "locationId": 3
+            "businessName": "Apple Inc."
         },
         {
             "id": 3,
-            "employeeId": 4,
-            "locationId": 2
+            "businessName": "Crazy Town"
         },
         {
             "id": 4,
+            "businessName": "Fox News."
+        }
+    ],
+    "employeeCustomers": [
+        {
+            "id": 1,
+            "employeeId": 1,
+            "customerId": 1
+        },
+        {
+            "id": 2,
             "employeeId": 2,
-            "locationId": 1
+            "customerId": 2
+        },
+        {
+            "id": 3,
+            "employeeId": 3,
+            "customerId": 3
+        },
+        {
+            "id": 4,
+            "employeeId": 4,
+            "customerId": 4
+        },
+        {
+            "id": 5,
+            "employeeId": 5,
+            "customerId": 2
+        },
+        {
+            "id": 6,
+            "employeeId": 1,
+            "customerId": 2
+        },
+        {
+            "id": 7,
+            "employeeId": 2,
+            "customerId": 3
+        },
+        {
+            "id": 8,
+            "employeeId": 3,
+            "customerId": 4
+        },
+        {
+            "id": 9,
+            "employeeId": 4,
+            "customerId": 2
+        },
+        {
+            "id": 10,
+            "employeeId": 5,
+            "customerId": 1
         }
     ]
-    
 }
