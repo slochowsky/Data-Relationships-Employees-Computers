@@ -1,4 +1,4 @@
-const employee = (person, computer, department, location, customers, employeeCustomerArray) => {
+const employee = (person, computer, department, location, customers) => {
     return `
         <section class="employees">
             <header class="employee__name">
@@ -15,16 +15,15 @@ const employee = (person, computer, department, location, customers, employeeCus
         </section>
         <section class="employee__customers">
         Has worked for the following customers.
-        <ul>${employeeCustomerArray.map(employeeCustomer => {
-            const foundCustomers = customers.find(customer => customer.id === employeeCustomer.customerId)
-            return `<li>${foundCustomers.businessName}</li> 
-            `
-            }).join("")
-        }
+        <ul>
+        ${customers.map(customer => {
+            return `<li>${customer.businessName}</li> `
+        }).join("")
+    }
         </ul>
     </section>
             </section>
     `
 }
-
+        
 export default employee

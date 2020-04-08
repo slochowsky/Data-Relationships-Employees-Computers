@@ -26,6 +26,7 @@ export const employeeList = () => {
     const render = () => {
         contentTarget.innerHTML = employees.map(person => {
             // Find related computers ids            
+            // Convert the array from relationship objects to computers objects
             const relatedComputers = computers.find(computer => computer.id === person.computerId)
             
             const relatedDepartments = departments.find(department => department.id === person.departmentId)
@@ -33,8 +34,13 @@ export const employeeList = () => {
             const relatedLocation = locations.find(location => location.id === person.locationId)
 
             const relationships = employeeCustomers.filter(ec => ec.employeeId === person.id)
+
+            const assignedCustomers = relationships.map(rel => {
+                //find customers by comparing the customers id to the id in the join table
+                return customers.find(customer => customer.id === rel.customerId)
+            })
             // Get HTML representation of product
-            const html = employee(person, relatedComputers, relatedDepartments, relatedLocation, customers, relationships)
+            const html = employee(person, relatedComputers, relatedDepartments, relatedLocation, assignedCustomers)
 
             return html
         }).join("")
@@ -44,4 +50,3 @@ export const employeeList = () => {
 }
 
 export default employeeList
-
